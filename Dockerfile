@@ -47,7 +47,7 @@ RUN	cd /tmp										&&	\
 	make										&&	\
 	make install
 
-ADD ../nginx.conf /opt/nginx/conf/nginx.conf
+ADD nginx.conf /opt/nginx/conf/nginx.conf
 
 RUN	cd /opt/ 	&&	\
 	tar cvzf /tmp/nginx.tar.gz nginx
