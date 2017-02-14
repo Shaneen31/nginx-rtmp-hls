@@ -47,10 +47,10 @@ RUN	cd /tmp										&&	\
 	make										&&	\
 	make install
 
-ADD nginx.conf /opt/nginx/conf/nginx.conf
-
 RUN	cd /opt/ 	&&	\
 	tar cvzf /tmp/nginx.tar.gz nginx
+
+ADD nginx.conf /opt/nginx/conf/nginx.conf
 
 EXPOSE 1935
 EXPOSE 80
